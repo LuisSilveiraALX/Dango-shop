@@ -50,11 +50,13 @@ const Card = ({
                     value={productTitle}
                     onChange={handleTitleChange} 
                     className='input__name'
+                    maxLength={30}
+                    placeholder='Product name'
                 />
 
                 <div className="amount__container">
                     <h2>${price}</h2>
-                    <input className='input__number' type="number" value={cartItemAmount} readOnly/>
+                    <input className='input__number' type="text" value={cartItemAmount} readOnly/>
                 </div>
 
                 <div className="description__container">
@@ -90,6 +92,10 @@ const Card = ({
                                 <Image
                                     src={imageUrl}
                                     alt={productTitle}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                      }}
                                 />
                         <div className="description__cart">
                           <p>

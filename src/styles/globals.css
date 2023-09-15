@@ -34,13 +34,12 @@
   }
   
   .cartItem {
-    width: 700px;
-    height: 250px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 1fr;
     align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin: 30px;
+    margin: 20px;
   }
   
   .cartItem img {
@@ -64,7 +63,6 @@
   
   .countHandler input {
     position: relative;
-    top: 50px;
     width: 40px;
     text-align: center;
     font-weight: bolder;
@@ -72,7 +70,6 @@
   
   .countHandler button {
     position: relative;
-    top: 50px;
     width: 20px;
     height: 20px;
     background-color: rgb(19, 19, 19);
@@ -107,26 +104,17 @@
   /* Responsive Shopping card*/
 @media (max-width: 768px) {
   .cartItem {
-    width: 600px;
+    width: auto;
   }
-  .shopping-cart__title {
-    font-size: 20px;
-  }
+
   .cartItem img {
     width: 150px;
     height: 100px;
   }
 }
 
-@media (max-width: 650px) {
-  .cartItem {
-    width: 480px;
-  }
-}
+
 @media (max-width: 520px) {
-  .cartItem {
-    width: 18rem;
-  }
 
   .shopping-cart__title {
     font-size: 15px;
@@ -134,14 +122,6 @@
 
   .shopping-cart__description {
     font-size: 12px;
-  }
-
-  .countHandler input {
-    top: 30px;
-  }
-  
-  .countHandler button {
-    top: 30px;
   }
 
 }
