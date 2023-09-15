@@ -11,6 +11,7 @@
   }
 
 .title__products {
+  margin-top: 20px;
   font-size: 20px;
   text-align: center;
   color: var(--text-color);

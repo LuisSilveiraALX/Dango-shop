@@ -4,6 +4,7 @@ import product3 from '../../assets/products/product3.png'
 import product4 from '../../assets/products/product4.png'
 import product5 from '../../assets/products/product5.png'
 import product6 from '../../assets/products/product6.png'
+import product7 from '../../assets/products/product7.png'
 
 export const Data = [
     {
@@ -46,6 +47,13 @@ export const Data = [
         Image: product6,
         title: "MacBook Air",
         price: 1399.00,
+        description: "Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all-aluminum enclosure.",
+    },
+    {
+        id:7,
+        Image: product7,
+        title: "Apple AirPods Pro",
+        price: 368.99,
         description: "Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all-aluminum enclosure.",
     },
 ]

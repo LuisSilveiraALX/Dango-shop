@@ -1,20 +1,23 @@
 .navbar {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: rgb(3, 3, 3);
     padding: 5px;
   }
   
   .navbar__container {
     color: white;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     margin: 0 10px;
   }
 
   .link  {
     font-size: 30px;
+    position: relative;
     text-decoration: none;
     color: white;
     transition: 0.5s;
@@ -26,10 +29,32 @@
 
   .button__cart {
     cursor: pointer;
+    position: relative;
+    z-index: 0;
     color: white;
     transition: 0.3s;
   }
 
   .button__cart:hover {
     color: #FF069C;
+  }
+
+  .div__cart {
+    display: flex;
+    position:relative;
+    bottom: 12px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    z-index: 1;
+  }
+
+  .span__p {
+    color: white;
+    border-color: none;
+    font-size: 12px;
+    
   }

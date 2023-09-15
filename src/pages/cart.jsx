@@ -3,6 +3,22 @@ import { Data } from "@/components/card/Data";
 import {Card2} from "@/components/card/card";
 import { ShopContext } from "@/context/shop-context";
 import { useContext } from "react";
+import { useRouter } from "next/router";
+
+const BackToHomeButton = () => {
+    const router = useRouter();
+
+    const handleButtonClick = () => {
+        router.push('/')
+    };
+    
+    return (
+        <button onClick={handleButtonClick} className="return__home ">
+            Return Home
+        </button>
+    )
+}
+
 
 const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext);
@@ -11,6 +27,7 @@ const Cart = () => {
         <>
         <Navbar />
         <div className="cart">
+        <BackToHomeButton />
             <div className="cartitems">
                 {Data.map((val, id) => {
                 if (cartItems[val.id] !== 0) {
@@ -25,6 +42,7 @@ const Cart = () => {
                 <h1 className="title__products"> Your Shopping Cart is Empty</h1>
             )}
             </div>
+        
         </div>
         </>
     )
