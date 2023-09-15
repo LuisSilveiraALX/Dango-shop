@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
+
+:root {
+    --background-color: #cccccc;
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: #A49F9F;
+    --component-color: #3C3B3B;
+    --component-color2: rgba(60, 59, 59, 0.15);
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  h1,h2,p {
+    font-size: 10px;
+  }
+  
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+  }
+
+  /* Page Cart */
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cartItem {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 30px;
+  }
+  
+  .cartItem img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .description__cart {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .shopping-cart__title {
+    font-size: 30px;
+  }
+
+  .shopping-cart__description {
+    max-width: 35rem;
+    font-size: 15px;
+  }
+  
+  .countHandler input {
+    position: relative;
+    top: 50px;
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .countHandler button {
+    position: relative;
+    top: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .price__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  .p__subtotal {
+    font-size: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+
+  .p__price {
+    font-weight: 600;
+  }
+
+  /* Responsive Shopping card*/
+@media (max-width: 768px) {
+  .cartItem {
+    width: 600px;
+  }
+  .shopping-cart__title {
+    font-size: 20px;
+  }
+  .cartItem img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cartItem {
+    width: 480px;
+  }
+}
+@media (max-width: 520px) {
+  .cartItem {
+    width: 18rem;
+  }
+
+  .shopping-cart__title {
+    font-size: 15px;
+  }
+
+  .shopping-cart__description {
+    font-size: 12px;
+  }
+
+  .countHandler input {
+    top: 30px;
+  }
+  
+  .countHandler button {
+    top: 30px;
+  }
+
+}
