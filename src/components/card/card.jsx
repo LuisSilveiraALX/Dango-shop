@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useContext, useState } from 'react';
 import { ShopContext } from '../../context/shop-context'
+import Link from 'next/link';
 
 const Card = ({
     id,
@@ -65,6 +66,7 @@ const Card = ({
                     Add to cart 
                     </button>
                 </div>
+                <Link  className='link__more' href='/cart'>Learn More</Link>
                 </div>
 
                 )
